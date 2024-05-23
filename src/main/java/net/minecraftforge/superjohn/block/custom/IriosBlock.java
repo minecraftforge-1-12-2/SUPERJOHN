@@ -22,11 +22,11 @@ public class IriosBlock extends Block {
         super(properties);
     }
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult blockHitResult) {
-        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
-            level.playSound(null, pos, ModSounds.IRIOS_SOUND.get(), SoundSource.BLOCKS, 1f, 1f);
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if(!pLevel.isClientSide() && pHand == InteractionHand.MAIN_HAND) {
+            pLevel.playSound(null, pPos, ModSounds.IRIOS_SOUND.get(), SoundSource.BLOCKS, 1f, 1f);
         }
-        return super.use(state, level, pos, player, hand, blockHitResult);
+        return InteractionResult.SUCCESS;
     }
 
     @Override
