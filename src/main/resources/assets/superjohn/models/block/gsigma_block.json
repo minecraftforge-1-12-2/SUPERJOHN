@@ -1,0 +1,6 @@
+{
+  "parent": "superjohn:block/marioblock",
+  "textures": {
+    "2": "superjohn:block/gsigmatexture"
+  }
+}

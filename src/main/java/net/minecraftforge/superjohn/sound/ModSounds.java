@@ -17,6 +17,7 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> JOHN_SOUND = registerSoundEvents("john_sound");
     public static final RegistryObject<SoundEvent> IRIOS_SOUND = registerSoundEvents("irios_sound");
+    public static final RegistryObject<SoundEvent> GSIGMA_SOUND = registerSoundEvents("gsigma_sound");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(SUPERJOHN.MODID, name)));

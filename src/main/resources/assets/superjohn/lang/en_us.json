@@ -1,4 +1,8 @@
 {
   "item.superjohn.john": "John",
+  "block.superjohn.john_block": "John Block",
+  "block.superjohn.irios_block": "Irios Block",
+  "block.superjohn.gsigma_block": "Golden Sigma Block",
   "creativetab.superjohn_tab":"SUPERJOHN"
+
 }

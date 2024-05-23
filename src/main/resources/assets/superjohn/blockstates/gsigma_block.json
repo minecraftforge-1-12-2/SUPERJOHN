@@ -1,19 +1,19 @@
 {
   "variants": {
     "facing=north": {
-      "model": "superjohn:block/irios_block",
+      "model": "superjohn:block/gsigma_block",
       "y": 0
     },
     "facing=east": {
-      "model": "superjohn:block/irios_block",
+      "model": "superjohn:block/gsigma_block",
       "y": 90
     },
     "facing=south": {
-      "model": "superjohn:block/irios_block",
+      "model": "superjohn:block/gsigma_block",
       "y": 180
     },
     "facing=west": {
-      "model": "superjohn:block/irios_block",
+      "model": "superjohn:block/gsigma_block",
       "y": 270
     }
   }

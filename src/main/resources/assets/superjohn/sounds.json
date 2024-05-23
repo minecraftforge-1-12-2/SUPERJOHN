@@ -10,5 +10,11 @@
     "sounds": [
       "superjohn:irios_sound"
     ]
+  },
+  "gsigma_sound": {
+    "subtitle": "sounds.superjohn.gsigmasound",
+    "sounds": [
+      "superjohn:gsigma_sound"
+    ]
   }
 }

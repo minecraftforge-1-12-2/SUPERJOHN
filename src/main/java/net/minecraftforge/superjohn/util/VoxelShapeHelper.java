@@ -6,9 +6,8 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Collection;
-import java.util.concurrent.atomic.AtomicReference;
 
-public class VoxelShapeHelper
+public class VoxelShapeHelper //source: https://github.com/MrCrayfish/MrCrayfishFurnitureMod/blob/1.20.X/src/main/java/com/mrcrayfish/furniture/util/VoxelShapeHelper.java
 {
     public static VoxelShape combineAll(Collection<VoxelShape> shapes)
     {
@@ -19,29 +18,6 @@ public class VoxelShapeHelper
         }
         return result.optimize();
     }
-
-    public static VoxelShape setMaxHeight(VoxelShape source, double height)
-    {
-        AtomicReference<VoxelShape> result = new AtomicReference<>(Shapes.empty());
-        source.forAllBoxes((minX, minY, minZ, maxX, maxY, maxZ) ->
-        {
-            VoxelShape shape = Shapes.box(minX, minY, minZ, maxX, height, maxZ);
-            result.set(Shapes.joinUnoptimized(result.get(), shape, BooleanOp.OR));
-        });
-        return result.get().optimize();
-    }
-
-    public static VoxelShape limitHorizontal(VoxelShape source)
-    {
-        AtomicReference<VoxelShape> result = new AtomicReference<>(Shapes.empty());
-        source.forAllBoxes((minX, minY, minZ, maxX, maxY, maxZ) ->
-        {
-            VoxelShape shape = Shapes.box(limit(minX), minY, limit(minZ), limit(maxX), maxY, limit(maxZ));
-            result.set(Shapes.joinUnoptimized(result.get(), shape, BooleanOp.OR));
-        });
-        return result.get().optimize();
-    }
-
     public static VoxelShape[] getRotatedShapes(VoxelShape source)
     {
         VoxelShape shapeNorth = rotate(source, Direction.NORTH);
@@ -89,10 +65,5 @@ public class VoxelShapeHelper
                 break;
         }
         return new double[]{var1, var2, var3, var4};
-    }
-
-    private static double limit(double value)
-    {
-        return Math.max(0.0, Math.min(1.0, value));
     }
 }
