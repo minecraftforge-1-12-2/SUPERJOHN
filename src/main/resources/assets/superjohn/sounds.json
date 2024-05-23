@@ -1,0 +1,14 @@
+{
+  "john_sound": {
+    "subtitle": "sounds.superjohn.john_sound",
+    "sounds": [
+      "superjohn:john_sound"
+    ]
+  },
+  "irios_sound": {
+    "subtitle": "sounds.superjohn.iriossound",
+    "sounds": [
+      "superjohn:irios_sound"
+    ]
+  }
+}
