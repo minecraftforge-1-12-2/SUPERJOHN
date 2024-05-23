@@ -1,5 +1,20 @@
 {
   "variants": {
-    "": { "model": "superjohn:block/john_block"}
+    "facing=north": {
+      "model": "superjohn:block/john_block",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "superjohn:block/john_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "superjohn:block/john_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "superjohn:block/john_block",
+      "y": 270
+    }
   }
 }
