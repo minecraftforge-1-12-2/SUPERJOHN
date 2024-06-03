@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#W#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "W": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "superjohn:irios_block"
+  }
+}

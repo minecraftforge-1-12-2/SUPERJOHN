@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#W#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:orange_dye"
+    },
+    "W": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "superjohn:john_block"
+  }
+}
